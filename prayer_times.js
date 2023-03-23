@@ -21,7 +21,7 @@ function successCallback(position) {
       document.getElementById('maghrib').textContent = prayerTimes.Maghrib;
       document.getElementById('isha').textContent = prayerTimes.Isha;
     })
-    .catch(error => console.log(error));
+    .catch(error => console.log(error + "error"));
 	document.getElementById('isha').textContent = "error";
 }
 
