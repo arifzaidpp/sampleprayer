@@ -10,7 +10,7 @@ function successCallback(position) {
   document.getElementById('longitude').textContent = longitude;
 
   // Send API request to Aladhan API for prayer times
-  fetch(`http://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=1`)
+  fetch(`https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=1`)
     .then(response => response.json())
     .then(data => {
       // Display prayer times in the HTML file
